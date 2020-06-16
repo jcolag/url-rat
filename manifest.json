@@ -2,7 +2,10 @@
   "manifest_version": 2,
   "name": "URL Rat",
   "version": "1.0",
-  "description": "Adds a red border to all webpages matching mozilla.org.",
+  "description": "Sends each visited URL to a local server.",
+  "permissions": [
+    "<all_urls>"
+  ],
   "icons": {
     "48": "icons/border-48.png"
   },
@@ -17,7 +20,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://*.mozilla.org/*"],
+      "matches": ["*://*/*"],
       "js": ["url-rat.js"]
     }
   ]
