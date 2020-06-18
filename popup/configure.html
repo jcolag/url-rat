@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="configure.css"/>
+  </head>
+
+<body>
+  <form id="config-content">
+    <div class="button">
+      <input type="radio" id="on" name="active" value="1">
+      <label for="on">On</label>
+    </div>
+    <div class="button">
+      <input type="radio" id="off" name="active" value="0">
+      <label for="off">Off</label>
+    </div>
+    <div>
+      Current destination: <b id="stored-dest">none</b>
+    </div>
+    <div class="textentry destination">
+      <input id="dest" placeholder="Destination URL" type="url" />
+    </div>
+    <div>
+      <button type="submit">Save</button>
+    </div>
+  </form>
+  <script src="configure.js"></script>
+</body>
+
+</html>

@@ -3,11 +3,18 @@
   "name": "URL Rat",
   "version": "1.0",
   "description": "Sends each visited URL to a local server.",
+  "homepage_url": "https://github.com/jcolag/url-rat",
   "permissions": [
-    "<all_urls>"
+    "<all_urls>",
+    "storage"
   ],
-  "icons": {
-    "48": "icons/border-48.png"
+  "options_ui": {
+    "page": "popup/configure.html",
+    "browser_style": true
+  },
+  "browser_action": {
+    "default_icon": "icons/urlrat32.png",
+    "default_title": "URL Rat"
   },
   "browser_specific_settings": {
     "gecko": {
@@ -23,5 +30,10 @@
       "matches": ["*://*/*"],
       "js": ["url-rat.js"]
     }
-  ]
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  }
 }

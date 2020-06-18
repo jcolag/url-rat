@@ -1,0 +1,10 @@
+{
+  "name": "urlrat@example.com",
+  "description": "ignored",
+  "type": "storage",
+  "data":
+  {
+    "dest": "http://localhost:8080/",
+    "isActive": "true"
+  }
+}
